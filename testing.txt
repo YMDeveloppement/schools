@@ -1,0 +1,161 @@
+        // $pattern="/[A-Z][A-Za-z]+[.0-9]+[A-Za-z]+[0-9]*[@](gmail|youho|mail)?[a-z]*.(com|fr|ma|co)/";
+        // preg_match_all($pattern,$_POST["email"],$matches);
+        // print_r($matches);
+        //////////////////////////
+        
+        // $this->get_connection();
+        // if($this->$conn){
+        //     $sql = "SELECT * FROM users WHERE mail = ".$mail ;
+        //     $query = mysqli_query($conn,$select);
+        //     if(mysqli_num_rows($query)){
+        //         $row = mysqli_fetch_array($query);
+        //         if($row["password"] == $pass){
+        //             return true;
+        //         }
+        //         else
+        //             return false;
+        //     }
+        //     else
+        //         return false;
+        // }
+        // else
+        //     return false;
+
+
+"id" => 
+"name" => 
+"surname" => 
+"mail" => 
+"password" => 
+"created_at" => 
+
+$obj = [
+                "name" => $_POST["name"],
+                "surname" => $_POST["surname"],
+                "email" => $_POST["email"],
+                "password" => $_POST["passw"],
+                "confirmPw" => $_POST["confirmPw"]
+                
+            ];
+
+                        echo  json_encode($obj);
+
+            $hash = password_hash($_POST["passw"], PASSWORD_DEFAULT); 
+
+//////////////////////////////////
+    public function add_user(){
+        $lastresult=false;
+        if(Connect::$conn){
+            // echo '<br> yassine addusers <br>';
+            $email = $this->fields['mail'];
+            $sql = "SELECT * FROM users WHERE mail = '$email'";
+            $result = mysqli_query(Connect::$conn, $sql);
+            // echo gettype(mysqli_num_rows($result))."<br>";
+            // print_r(mysqli_num_rows($result));
+            // if(mysqli_num_rows($result)>0){
+            if(mysqli_num_rows($result) == 0){
+                // echo "enter";
+                $date = date("Y/m/d");
+                // echo "be exit";
+                // exit;
+                $sql = <<<insertion
+                    insert into users(name , surname , mail , password , created_at ) values('{$this->fields['name']}','{$this->fields['surname']}','{$this->fields['mail']}','{$this->fields['password']}','$date')
+                insertion;
+                $result = mysqli_query(Connect::$conn, $sql);   
+                echo 'result==> '. $result ;
+                if($result){
+                    // return json_encode(['error' => null , 'confirmation'=>'Do it successfully']);
+                    $GLOBALS['lastresult'] = true;
+                    // return 'inserted with success';
+                }
+                else{
+                    // return json_encode(['error' => true]);
+                    $GLOBALS['lastresult'] = false;
+                    // return 'faild inserted';
+                }
+            }
+            else{
+                $GLOBALS['lastresult']=false;
+                // return json_encode(['error' => true]);
+                // return 'faild to check';
+            }
+            
+        }
+        else{
+            Connect::get_connection();
+            $this->add_user();
+        }
+        return $GLOBALS['lastresult'];
+    }
+/////////////////////////
+if (isset($_POST['SignIn'])) {
+    if ($_POST["name"] && $_POST["surname"] && $_POST["email"] && $_POST["passw"]) {
+        // echo $_POST["name"] . " , " . $_POST["surname"] . " , " . $_POST["email"] . " , " . $_POST["passw"] . " , " . $_POST["confirmPw"] . "<br>";
+        $pattern = "/[A-Z]?[A-Za-z]+[.0-9]+[A-Za-z]+[0-9]*@[gmail|yahoo|mail]?[a-z]*.[com|fr|ma|co]+/";
+
+        if (preg_match_all($pattern, $_POST["email"], $matches)) {
+            if ($_POST["confirmPw"] !== $_POST["passw"]) {
+                $error = "Error in Confirmation of Password";
+                header('Location: /schools/login.php' . (!empty($error) ? '?error=' . $error : ''));
+                exit;
+            }
+            $user->fields["name"] = $_POST["name"];
+            $user->fields["surname"] = $_POST["surname"];
+            $user->fields["mail"] = $_POST["email"];
+            $user->fields["password"] = password_hash($_POST["passw"], PASSWORD_DEFAULT);
+            if($user->add_user()){
+                echo 'Home page';   
+            }
+            else{
+                echo "<br> back <br>";
+            }
+            // $status=json_decode($user->add_user());
+            // echo gettype($status);
+            // if(property_exists($status,"confirmation")){
+            //     echo $status->confirmation;
+            // }
+            // else{
+            //     echo $status->error;
+
+            // }
+        } else {
+            $error = "Error in Email structure";
+            header('Location: /schools/login.php' . (!empty($error) ? '?error=' . $error : ''));
+            exit;
+        }
+    }
+} else {
+    echo "yassine sout";
+}
+
+///////////////////////
+    // public $id;
+    // public $name;
+    // public $surname;
+    // public $mail;
+    // public $password;
+    // public $role;
+    // public $status;
+    // public $created_at;
+    // public $updated_at;
+
+
+/////////////
+// echo 'Dashbord.php';
+// if(isset($_GET['error'])){
+//     echo $_GET['error'];
+// }
+// echo $_GET['error'];
+// $rest=json_encode(['error' => '<br>yassine mesbahi<br>' , 'confirmation'=>true]);
+// $rest=json_encode(['error' => 'yassine mesbahi' , 'confirmation'=>'Do it successfully']);
+// echo $rest["error"] . '<br>';
+// $rest=json_decode($rest);
+// echo $rest  . '<br>';
+// echo $rest['error'];
+// echo $rest->error;
+// $json = '{"countryId":"84","productId":"1","status":"0","opId":"134"}';
+// $json = json_decode($json, true);
+// echo $json['countryId'];
+// echo $json['productId'];
+// echo $json['status'];
+// echo $json['opId'];

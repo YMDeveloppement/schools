@@ -1,0 +1,55 @@
+.cards_dash{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    grid-gap: 10px;
+    justify-content: center;
+    margin: 40px 0; 
+    
+
+}
+.card_niveau{
+    /* width:calc(90% / 3); */
+    height: 300px;
+    padding:0 20px 20px;
+    background-color: white;
+    /* font-family: */
+    font-weight: bold;
+    border-radius: 10px;
+    /* overflow: hidden    ; */
+    /* position: relative; */
+    
+}
+.line_grid{
+    display: flex;
+    flex-direction: row;
+    align-items: center !important;
+    justify-content: space-between !important;
+    margin: 3px;
+
+}
+.title_card{
+    text-align: center !important;
+    width: calc(100% - 20px);
+    text-transform: capitalize;
+    padding: 20px 5px;
+    color: #63abff;
+
+}
+.progress{
+    width: 50% !important;
+}
+.count{
+    padding: 2px 5px;
+    border-radius: 50%;
+    background-color: #2ed8b6;
+
+}
+
+/* .cards_dash .title_card:nth-child(1)  {
+    color: #ff5975;
+
+}
+.cards_dash .title_card:nth-child(2)  {
+    color: #2c040b;
+
+} */

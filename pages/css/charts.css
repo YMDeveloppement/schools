@@ -1,0 +1,14 @@
+.chartBlock{
+     display: flex;
+     width:50% !important;
+     height: 300px !important;
+     display: grid;
+     grid-template-columns: repeat(2,minmax(300px,1fr));
+     
+}
+canvas{
+     display: block !important;
+     /* width:50% !important; */
+     height: auto !important;
+
+}
