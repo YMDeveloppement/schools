@@ -1,6 +1,9 @@
 <?php
 include "layouts/headerFile.php";
 include "Controllers/classes.php";
+include "Controllers/niveaux.php";
+
+
 
 // session_start();    
 
@@ -99,6 +102,7 @@ enddash;
 // $_SESSION["user"]='yassine';
 // print_r($_SESSION["user"]);
 
+$v = storeNiveauJson();
 
 echo <<<"chart"
 <div class="chartBlock">
