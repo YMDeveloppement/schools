@@ -1,5 +1,5 @@
 <?php
-include '../config/Connect.php';
+include_once '../config/Connect.php';
 session_start();
 class User
 {

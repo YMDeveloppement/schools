@@ -4,7 +4,7 @@
 
 <?php
 
-include 'config/Connect.php';
+include_once 'config/Connect.php';
 
 class Classe
 {

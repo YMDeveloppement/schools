@@ -1,14 +1,24 @@
-.chartBlock{
-     display: flex;
-     width:50% !important;
-     height: 300px !important;
-     display: grid;
-     grid-template-columns: repeat(2,minmax(300px,1fr));
-     
-}
-canvas{
-     display: block !important;
-     /* width:50% !important; */
-     height: auto !important;
+/* #myChartPile{
+    width:100px;
+    height: 100px;
+} */
+.chart-container {
+    width: 50% !important;
+    /* box-sizing: border-box; */
+    display: grid;
+    grid-template-columns: repeat(2,minmax(400px,1fr));
+    /* background-color:#6d6868; */
+    /* margin: auto; */
+    justify-content: center;
+    /* align-items: center; */
+    margin: 100px;
+    margin-bottom: 40px;
+    place-items: center ;
+    grid-gap: 30px;
+    justify-items: center;
 
+}
+canvas{ 
+    width:400px !important;
+    height:400px !important;
 }

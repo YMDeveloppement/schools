@@ -4,11 +4,18 @@
 // $Connect = new Connect();
 // echo $Connect->yy;
 
-include 'login.php';
+// include '//Controllers/niveaux.php';
+// include dirname( __FILE__ )."\Controllers\classes.php";
 // include 'Classes/user.php';
 // $user=new User();
 // $status=$user->check_login("yassine","dazed");
 // echo $status;
+
+// include dirname( __FILE__ )."\Controllers\classes.php";
+
+// writeJson();
+// echo  $_SERVER['REQUEST_URI'];
+include "Classes/niveau.php";
 
 ?>
 

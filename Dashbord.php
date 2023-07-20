@@ -1,9 +1,9 @@
 <?php
-include "layouts/headerFile.php";
-include "Controllers/classes.php";
-include "Controllers/niveaux.php";
-
-
+include_once "layouts/headerFile.php";
+include_once "Controllers/classes.php";
+// include dirname( __FILE__ ).'\\'."Controllers\\niveaux.php";
+// include_once "../Classes/niveau.php" ;
+include_once "Controllers/niveaux.php";
 
 // session_start();    
 
@@ -102,13 +102,14 @@ enddash;
 // $_SESSION["user"]='yassine';
 // print_r($_SESSION["user"]);
 
-$v = storeNiveauJson();
 
-echo <<<"chart"
-<div class="chartBlock">
-    <canvas id="myChartPile"></canvas>
-</div> 
-chart;
+echo <<<"yassine"
+<div class="chart-container">
+    <canvas id="myChartPile" style ="width:200px, height:200px"></canvas>
+</div>     
+yassine;
+writeJson();
 
 include "layouts/footerFile.php";
+
 ?>

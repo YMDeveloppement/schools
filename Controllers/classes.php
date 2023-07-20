@@ -1,6 +1,6 @@
 <?php
 
-include "Classes/classe.php";
+include_once "Classes/classe.php";
     function getClasseByniveau(){
 
         $obj = new Classe();

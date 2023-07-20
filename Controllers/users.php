@@ -1,5 +1,5 @@
 <?php
-include '../Classes/user.php';
+include_once '../Classes/user.php';
 //
 
 $user = new User();
