@@ -8,24 +8,21 @@ $.ajax({
   success:function(result){
       let date = result.date
       let matiere = result.matiere
-      let newData = [];
-      for(let i = 0 ; i< date.length ; i++){
-        const line = {
-          "x" : date[i],
-          "y"  : matiere[i]
-        };
-        newData.push(line)
-      }
-      console.log(newData)
+      // let newData = [];
+      // for(let i = 0 ; i< date.length ; i++){
+      //   const line = {
+      //     "x" : date[i],
+      //     "y"  : matiere[i]
+      //   };
+      //   newData.push(line)
+      // }
+      console.log(result)
 
       const data= {
+        labels:date,
           datasets: [{
               label: 'eval_date',
-              data: [
-                {x: '2023-11-10', y: 'Activités orales'},
-                {x: '2023-01-10', y: 'Activités orales'},
-                {x: '2023-02-10', y: 'Activités orales'}
-                ] ,
+              data: matiere,  
               backgroundColor: 'rgb(255, 99, 132)'
           }]
           
@@ -35,18 +32,20 @@ $.ajax({
         type: 'bubble',
         data: data,
         options: {
-          scales: {
-            x: {
-              type: 'time',
-              time:{
-                unit:"day"
-              }
-            },
-            y:{
-              beginAtZero:true
+          responsive: true,
+          plugins: {
+            scales: {
+              x: {
+                type: 'time',
+                time:{
+                  unit:'day',
+                  parser:'yyyy-mm-dd'
+                }
+              },
+              y:{}  
             }
           }
-        }
+        },
       };
       // const config = {
       //   type: 'scatter',

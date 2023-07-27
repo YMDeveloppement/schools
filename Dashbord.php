@@ -107,7 +107,6 @@ echo <<<"yassine"
 <div class="chart-container">
     <canvas id="myChartPile" style ="width:200px, height:200px"></canvas>
     <canvas id="eval_date" style ="width:200px, height:200px"></canvas>
-
 </div>     
 yassine;
 

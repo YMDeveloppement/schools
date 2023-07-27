@@ -5,6 +5,7 @@
         
         $result = Evaluation::getDateBymatiere();
         print_r(json_encode($result));
+        echo "<script>console.log(".$result[0][0].")</script>";
 
     }
     
