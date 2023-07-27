@@ -1,6 +1,6 @@
 <?php
 
-include_once 'config/Connect.php';
+include_once '../config/Connect.php';
 
 class Evaluation
 {
@@ -22,11 +22,33 @@ class Evaluation
     );
 
 
-    public function getEvaluationsPlanifier(){
+    public function getEvaluationsPlanifier()
+    {
         global $data;
         if (Connect::$conn) {
-            
+
         }
+    }
+
+    public static function getDateBymatiere()
+    {
+        global $data;
+        $data =[];
+        if (Connect::$conn) {
+            $sql = 'select date_evaluations,mtr.label as matiere from evaluations evl inner join matieres mtr on mtr.ID = evl.matiere ';
+            $result = mysqli_query(Connect::$conn, $sql);
+            foreach ($result as $item) {
+                $data["date"][] = $item['date_evaluations'];
+                $data["matiere"][] = $item['matiere'];
+
+            }
+        }
+        else{
+            Connect::get_connection();
+            self::getDateBymatiere();
+        }
+
+        return $data;
     }
 
 

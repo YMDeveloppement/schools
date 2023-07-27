@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="/schools/pages/css/login.css">	
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 	<title>Document</title>
 
 	<style>
@@ -115,7 +115,7 @@
 		</form>
 	</div>
 	<div class="form-container sign-in-container">
-		<form action="Controllers/users.php" method="post">
+		<form action="Controllers/users.php" method="post" autocomplete="off"  >
 			<h1>Sign in</h1>
 			<div class="social-container">
 				<a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
@@ -124,8 +124,8 @@
 			</div>
 			<span>or use your account</span>
 			<!-- <input type="hidden" name="id"> -->
-			<input type="email" name="email"  id="email" placeholder="Email" />
-			<input type="password" name="password"  id="password" placeholder="Password" />
+			<input type="email" name="email"  id="email" class="emailLogin" value="" placeholder="Email" autocomplete="off" />
+			<input type="password" name="password"  id="password" class="pwLogin" value="" placeholder="Password"  autocomplete="off"/>
 			<a href="#">Forgot your password?</a>
 			<!-- <button type ="submit" name = "Sign In">Sign In</button> -->
 			<input type ="submit" name = "login" id="login" value="Login"/>
@@ -150,6 +150,23 @@
 <script src="../schools/pages/js/login.js"></script>
 <!-- <script>	 alert('yassine')</script> -->
 
+<script>
 
+		$(window).on(function() { 
+			$('form').each(function() { this.reset() })
+			
+			// $(".emailLogin").val("")
+    		// $(".pwLogin").val("")
+		});
+		// window.onload = function(){
+
+		// 	// setTimeout(()=>{
+		// 	// 	document.querySelector(".emailLogin").value =" 	ç"
+		// 	// 	document.querySelector(".pwLogin").value =" )"
+		// 	// 	console.log("yassine")
+		// 	// })
+		// }
+
+</script>
 </body>
 </html>

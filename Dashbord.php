@@ -106,10 +106,14 @@ enddash;
 echo <<<"yassine"
 <div class="chart-container">
     <canvas id="myChartPile" style ="width:200px, height:200px"></canvas>
+    <canvas id="eval_date" style ="width:200px, height:200px"></canvas>
+
 </div>     
 yassine;
+
 writeJson();
 
+echo "<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js'></script>";  
 include "layouts/footerFile.php";
 
 ?>

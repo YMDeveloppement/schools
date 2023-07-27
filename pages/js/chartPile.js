@@ -6,7 +6,7 @@ setTimeout(()=>{
     fetch('./pages/js/data.json')           //api for the get request
         .then(response => response.json())
         .then((dataJson) => {
-            console.log(dataJson['label'])
+            // console.log(dataJson['label'])
             // ctxs.forEach(ctx => {
         
                 Chart.defaults.font.size = 10;

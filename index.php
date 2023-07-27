@@ -1,4 +1,5 @@
 
+
 <?php
 // include 'config/Connect.php';
 // $Connect = new Connect();
@@ -15,9 +16,10 @@
 
 // writeJson();
 // echo  $_SERVER['REQUEST_URI'];
-include "Classes/niveau.php";
-
+// include "Classes/niveau.php";
+    include "login.php";
 ?>
+
 
 
 

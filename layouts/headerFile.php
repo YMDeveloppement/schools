@@ -19,6 +19,9 @@ echo <<<"Head"
     <link rel="stylesheet" href="./pages/css/cards_dashbord.css">
     <link rel="stylesheet" href="./pages/css/charts.css">
     <link rel="icon" type="image/x-icon" href="./img/schoolicon.png" style="min-width:60px;height:60px">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns/dist/chartjs-adapter-date-fns.bundle.min.js"></script>
+
 
 
 </head>
