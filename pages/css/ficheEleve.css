@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+*{
+    font-family: "Manrope", sans-serif;
+}
+
+.container_ficheEleve{
+    margin:85px auto 30px;
+    height: 350px;
+    width: 95%;
+    background-color: rgb(255, 255, 255) ;
+    border-radius: 20px;
+    /* margin: auto; */
+    
+}
+.card_ficheEleve{
+    width: 100%;
+    /* margin: auto; */
+    height: 60%;
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    font-size:10pt;
+
+}
+.profil_img{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.profil_img .imageEleve{
+    width: 100px;
+    height: 100px;
+    background-color: #f7f6fb;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+.imageEleve img{
+    width: 65%;
+    height: auto;
+}
+.info_parent div{
+    display: flex;
+    flex-direction:column;
+    align-items:flex-start;
+    justify-content: space-around;
+    
+}
+.name,
+.class_promo,
+.massar,
+.matricule,
+.group{
+    font-size:10pt;
+    /* font-weight: 500 */
+    color: rgb(165, 165, 165);
+}
+.telParent div
+,.emailParent
+,.codeFamille{
+    margin-bottom: 10px;
+
+}
+.tuteurs{
+    display: flex;
+    flex-direction: row;
+    box-sizing:border-box;
+    padding: 0 20px;
+    height: 30%;
+}
+.addTuteur{
+    width: 30%;
+    height: 100%;
+}
+
+.box_addnew{
+    border-radius: 10px;
+    width: 80%;
+    height: 100%;
+    background-color: #fbfbff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.iconAdd{
+    background-color: #eef0ff;
+    width:  50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.iconAdd button{
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+.listTuteur{
+    width: 70%;
+    height: 100%;
+}
+.iconAdd button:focus{
+    border:none;
+    outline: none;
+}

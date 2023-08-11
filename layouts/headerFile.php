@@ -15,20 +15,24 @@ echo <<<"Head"
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <link rel="stylesheet" href="/schools/layouts/layout.css">
-    <link rel="stylesheet" href="pages/css/carddash.css">
-    <link rel="stylesheet" href="./pages/css/cards_dashbord.css">
-    <link rel="stylesheet" href="./pages/css/charts.css">
-    <link rel="icon" type="image/x-icon" href="./img/schoolicon.png" style="min-width:60px;height:60px">
+    <link rel="stylesheet" href="/schools/pages/css/carddash.css">
+    <link rel="stylesheet" href="/schools/pages/css/ficheEleve.css">
+    <link rel="stylesheet" href="/schools/pages/css/cards_dashbord.css">
+    <link rel="stylesheet" href="/schools/pages/css/charts.css">
+    <link rel="icon" type="image/x-icon" href="/schools/img/schoolicon.png" style="min-width:60px;height:60px">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns/dist/chartjs-adapter-date-fns.bundle.min.js"></script>
 
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/schools/pages/css/sliderEleve.css">
 
 </head>
 <body id="body-pd">
     <header class="header" id="header">
         <div class="header_toggle"> <i class='bx bx-menu' id="header-toggle"></i> </div>
-        <div class="header_img" style="display:flex;" > <div style="align-self:center;padding:0 2px"> Hello yassine Mesbahi</div> <img src="./img/schoolicon.png" alt=""> </div>
+        <div class="header_img" style="display:flex;" > <div style="align-self:center;padding:0 2px"> Hello yassine Mesbahi</div> <img src="/schools/img/schoolicon.png" alt=""> </div>
     </header>
     <div class="l-navbar" id="nav-bar" >
         <nav class="nav">

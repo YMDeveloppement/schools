@@ -1,0 +1,115 @@
+
+.main {
+    font-family:Arial;
+    /* width:5  00px; */
+    display:block;
+    margin:0 auto;
+}
+h3 {
+    background: #fff;
+    color: #3498db;
+    font-size: 36px;
+    line-height: 100px;
+    margin: 10px;
+    padding: 2%;
+    position: relative;
+    text-align: center;
+}
+.action{
+    display:block;
+    margin:100px auto;
+    width:100%;
+    text-align:center;
+}
+.action a {
+    display:inline-block;
+    /* padding:5px 10px;  */
+    background:#f30;
+    color:#ffffff;
+    text-decoration:none;
+}
+.action a:hover{
+    background:#000;
+}
+.slick-prev:before , .slick-next:before {
+    color: #bebebe;
+    z-index: 55;
+}
+.container_eleveSlick{
+    background-color: #ffffff; 
+    width: 95%;
+    height: 300px;
+    margin: 0 auto;
+}
+.slideTesting{
+    height: 35%;
+    width:90% ;
+    margin: auto;
+    /* padding: 0 ; */
+    /* overflow: hidden; */
+    z-index: 1;
+}
+.separateur{
+    min-width: 100%;
+    background-color: #c9c8c8;
+    height: 3px;
+}
+a, button{
+    text-decoration: none;
+    outline: none;
+    border: none;
+}
+
+.slideTesting div a{
+    width: 60px;
+    height: 60px !important;
+    border:2px solid #a6a6a6;
+    border-radius: 50%;
+    display: flex;
+    margin: auto;
+    position: absolute;
+    top:10%;
+    left:50%;
+    transform: translate(-50%,0%);
+}
+.slideTesting div a img{
+    width: 40px;
+    height: 40px;
+}
+.slideTesting div {
+    text-align: center;
+    position: relative;
+
+    /* width:min-content; */
+    height: 100%;
+    /* display: flex !important; */
+    /* align-items: center !important; */
+    /* justify-content: center !important; */
+}
+.newh3{
+    height: 100% !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 0 !important; 
+    margin: 0px !important;
+    padding: 0 !important;
+}
+.slideTesting div span{
+    position: absolute;
+    bottom: 10px;
+    font-size: .8em;
+    text-overflow: ellipsis;
+    width: 100%;
+    left: 0;
+    color:#016eb8;
+    font-weight: 600;
+}
+.img_active{
+    filter: invert(0.5) sepia(1) saturate(5) hue-rotate(175deg);
+    fill: #db2d2d;
+    --color_fill: #db2d2d;
+}
+img path {
+    fill: #963434;
+}
