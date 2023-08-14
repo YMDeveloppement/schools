@@ -74,6 +74,11 @@
     box-sizing:border-box;
     padding: 0 20px;
     height: 30%;
+    
+}
+.tuteurs .title{
+    font-size: 1.2vw;
+    font-weight: 700;
 }
 .addTuteur{
     width: 30%;

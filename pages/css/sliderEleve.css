@@ -1,4 +1,6 @@
-
+:root{
+    --title_font : 12px;
+}
 .main {
     font-family:Arial;
     /* width:5  00px; */
@@ -38,16 +40,20 @@ h3 {
 .container_eleveSlick{
     background-color: #ffffff; 
     width: 95%;
-    height: 300px;
+    height: 500px;
     margin: 0 auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
 }
 .slideTesting{
-    height: 35%;
+    height: 25%;
     width:90% ;
     margin: auto;
+    margin-bottom: 20px;
     /* padding: 0 ; */
     /* overflow: hidden; */
     z-index: 1;
+    border-radius: 10px;
 }
 .separateur{
     min-width: 100%;
@@ -71,6 +77,7 @@ a, button{
     top:10%;
     left:50%;
     transform: translate(-50%,0%);
+    cursor: pointer;
 }
 .slideTesting div a img{
     width: 40px;
@@ -79,6 +86,7 @@ a, button{
 .slideTesting div {
     text-align: center;
     position: relative;
+    width: 100%;
 
     /* width:min-content; */
     height: 100%;
@@ -112,4 +120,114 @@ a, button{
 }
 img path {
     fill: #963434;
+}
+.activeTab{
+    border: #3498db;
+}
+.slideTesting .box{
+    border-bottom:3px solid #c5c3c3;
+}
+.active_box{
+    border-color: #3498db !important;
+}
+
+.boxDoc{
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.sep{
+    height: 100%;
+    width: 12px ;
+    background-color: #dddbdb;
+}
+.filesBox{
+    padding:10px;
+    width: 50% ;
+    height: 100%;
+    border-right: 1px solid #dddbdb;
+    margin-bottom: 10px;
+}
+.autorisationBox{
+    padding:10px;
+    width: 50% ;
+    height: 100%;
+    margin-bottom: 10px;
+}
+.contentBox{
+    border-bottom: 1px solid #dddbdb;
+    height:calc(100% - 25% - 40px);
+    margin:auto ;
+    width: 95%;
+    padding: 10px;
+    
+}
+.title{
+    font-size: 1.32rem;
+    font-weight: 600;
+    color: #303046;
+    
+}
+.subtitle{
+    font-size: .8rem;
+    font-weight: 600;
+    color: #303046;
+
+}
+.doc{
+    display:flex;
+    flex-direction: row;
+    width:100%;
+    margin: 20px 0;
+    background-color: transparent;
+}
+.check_icon{
+    background-color: transparent;
+    height:100;
+    width: 10%;
+    position: relative;
+    z-index: 2;
+}
+.check_icon::before{
+    content: "";
+    height: 50%;
+    width: .3px;
+    background-color: #cecece;
+    position: absolute;
+    bottom: -10%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+}
+.checked{
+    z-index: 3;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e6ffe5;
+    border-radius: 50%;
+}
+
+.data{
+    /* padding: 0px 0px; */
+}
+.data .typeDoc{
+    color: #303046;
+    font-weight: 900;
+    padding: 2.5px;
+}
+.data .comment{
+    padding: 2.5px;
+    color: #282828;
+    font-size: 13px;
+    font-weight: 700;
+}
+.data .date{
+    padding: 2.5px;
+    color: #282828;
+    font-size: 12px;
+    font-weight: 700;
 }

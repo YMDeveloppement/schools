@@ -52,6 +52,6 @@ echo <<<"Head"
         </nav>
     </div>
     <!--Container Main start-->
-    <div class="height-100 bg-light">
+    <div class="bg-light">
 Head;
 ?>
