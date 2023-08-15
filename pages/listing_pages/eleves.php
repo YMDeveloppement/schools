@@ -91,11 +91,26 @@ include_once  dirname(dirname( dirname( __FILE__ ))) ."\layouts\headerFile.php" 
     <div class="contentBox">
         <div class="boxDoc">
             <div class="filesBox">
-                <div class="title">
-                    Dossiers de l’élève :
-                </div>
-                <div class="subtitle">
-                (Documents administratifs, copies ..)
+                <div class="dossier">
+                    
+                    <div>
+                        <div class="title">
+                            Dossiers de l’élève :
+                        </div>
+                        <div class="subtitle">
+                        (Documents administratifs, copies ..)
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <div class="folder-icon">
+                                <i class="fa-regular fa-folder-open"></i>
+                            </div>
+                            <div class="folder-add">
+                                <i class="fa-solid fa-plus"></i>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="doc">
                     <div class="check_icon">

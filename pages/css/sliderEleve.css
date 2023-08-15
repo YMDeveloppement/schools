@@ -106,12 +106,12 @@ a, button{
 .slideTesting div span{
     position: absolute;
     bottom: 10px;
-    font-size: 1.1vw;
+    font-size: 1vw;
     text-overflow: ellipsis;
     width: 100%;
     left: 0;
     color:#6b4ce6;
-    font-weight: bold;
+    font-weight: 600;
 }
 .img_active{
     filter: invert(0.5) sepia(1) saturate(5) hue-rotate(175deg);
@@ -169,6 +169,12 @@ img path {
     color: #303046;
     
 }
+.dossier{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
 .subtitle{
     font-size: .8rem;
     font-weight: 600;
@@ -215,13 +221,13 @@ img path {
     margin-left: 20px;
     border-radius: 10px;
     width: 100%;
+    transition: .5s ease;
 }
 .data:hover{
     border:1px solid #d4d4d4;
     margin-left:3px;
     /* padding-left: 20px; */
     padding: 10px 5px 10px 20px;
-    transition: .5s ease;
 }
 .data .typeDoc{
     color: #303046;
