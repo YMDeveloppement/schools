@@ -92,7 +92,6 @@ include_once  dirname(dirname( dirname( __FILE__ ))) ."\layouts\headerFile.php" 
         <div class="boxDoc">
             <div class="filesBox">
                 <div class="dossier">
-                    
                     <div>
                         <div class="title">
                             Dossiers de l’élève :
@@ -102,12 +101,12 @@ include_once  dirname(dirname( dirname( __FILE__ ))) ."\layouts\headerFile.php" 
                         </div>
                     </div>
                     <div>
-                        <div>
+                        <div class="button-box">
+                            <div class="add-add">
+                                <i class="fa-solid fa-plus"></i>
+                            </div>
                             <div class="folder-icon">
                                 <i class="fa-regular fa-folder-open"></i>
-                            </div>
-                            <div class="folder-add">
-                                <i class="fa-solid fa-plus"></i>
                             </div>
                         </div>
                     </div>
@@ -222,7 +221,10 @@ include_once  dirname(dirname( dirname( __FILE__ ))) ."\layouts\headerFile.php" 
                 </div>
             </div>  
         </div>       
-        <div class="boxAbc"></div>        
+        <div class="boxAbc">
+            <!--  -->
+
+        </div>        
         <div class="boxPay"></div>        
         <div class="boxSuivi"></div>        
         <div class="boxDispl"></div>        
@@ -234,6 +236,13 @@ include_once  dirname(dirname( dirname( __FILE__ ))) ."\layouts\headerFile.php" 
     
     <!-- <div class="separateur"></div> -->
     
+</div>
+<!-- popup -->
+
+<div class="popup_permi">
+    <div class="boxPermi">
+        
+    </div>
 </div>
 
 

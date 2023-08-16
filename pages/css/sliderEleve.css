@@ -195,6 +195,30 @@ img path {
     position: relative;
     z-index: 2;
 }
+.folder-icon{
+    background-color: #ff7f004a;
+    color: #ff7f00;
+}
+.add-add{
+    background-color: #ae00ff4a;
+    color: #a206eb;
+}
+.folder-icon,
+.add-add{
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    /* background-color: #6b4ce6; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+}
+.button-box{
+    display: flex;
+    
+}
 .check_icon::before{
     content: "";
     height: 40%;
@@ -429,3 +453,24 @@ img path {
     -webkit-box-shadow: var(--circle-checked-shadow);
     box-shadow: var(--circle-checked-shadow);
   }
+/*  */
+
+.popup_permi{
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100vw;
+    height: 100%;
+    background-color: #7473735a;
+    z-index: 244;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+}
+.boxPermi{
+    margin-top: 30px;
+    width: 400px;
+    height: 80%;
+    background-color: #ffffff;
+    border-radius: 10px;
+}
