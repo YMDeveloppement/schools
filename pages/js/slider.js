@@ -19,3 +19,8 @@ $('.box').click(function(){
     $('.box.active_box a').toggleClass('active_box');
 
 })
+
+$(".close").click(function(){
+    console.log($("popup_permi"))
+    $(".popup_permi").css("display","none")
+})

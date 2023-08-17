@@ -26,11 +26,13 @@ include_once  dirname(dirname( dirname( __FILE__ ))) ."\layouts\headerFile.php" 
         </div>
         <div class="info_parent">
             <div class="telParent">
-                <div>0669857412</div>
-                <div>0663016490</div>
-                <div>0694383802</div>
-        </div>  
-            <div class="emailParent">Yassine.mesbahi@gmail.com</div>
+                <div><i class="fa-solid fa-phone" style="color: #bababa;"></i> 0669857412</div>
+                <div><i class="fa-solid fa-phone" style="color: #bababa;"></i> 0663016490</div>
+                <div><i class="fa-solid fa-phone" style="color: #bababa;"></i> 0694383802</div>
+            </div>      
+            <div class="emailParent"><span><i class="fa-solid fa-envelope" style="color: #bababa;"></i></span> Yassine.mesbahi@gmail.com</div>
+            <div class="annive"><i class="fa-solid fa-cake-candles" style="color: #bababa;"></i>2020/8/9</div>
+            <div class="location"><i class="fa-solid fa-location-dot" style="color: #bababa;"></i> Yassine.mesbahi@gmail.com</div>
             <div class="codeFamille">#25879032#</div>
         </div>
         <div class="list_tuteurs">
@@ -239,11 +241,101 @@ include_once  dirname(dirname( dirname( __FILE__ ))) ."\layouts\headerFile.php" 
 </div>
 <!-- popup -->
 
+<!-- <div class="popup_permi">
+    <div class="boxPermi">
+        <div class="close"><i class="fa-solid fa-circle-xmark" style="color:red"></i></div>
+        <div class="permiheader">
+            <div>Ajouter une Autorisation</div>
+        </div>
+        <div class="listPermi">
+            <label for="" class="text-secondary fs-6">Type : </label>
+            <select class="form-select mt-2 " aria-label="Default select example">
+                <option selected>Selectionner une autorisation</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+            </select>
+            <label for="" class="text-secondary mt-4 fs-6">Déscription :</label>
+            <div class="form-floating mt-2">
+                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                <label for="floatingTextarea2" style="font-size:15px">Remarque</label>
+            </div>
+            <label for="" class="text-secondary mt-4 fs-6">Status :</label>
+            <div class="form-check mt-2" style="margin-left:10px">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                <label class="form-check-label" for="flexRadioDefault1">
+                    Activer
+                </label>
+            </div>
+            <div class="form-check" style="margin-left:10px"> 
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                <label class="form-check-label" for="flexRadioDefault2">
+                    Désactiver
+                </label>
+            </div>
+            
+        </div>
+        <div class="btnsave mb-5 mt-5">
+            <button type="button" class="btn btn-primary">Enregistrer</button>
+        </div>
+    </div>
+</div> -->
+
+<?php
+    
+    if($_FILES['my_file']['name']!=""){
+        // echo 'yes';
+        $error=[];  
+        $fileExtensionsAllowed = ['png']; 
+        $fileName = $_FILES['the_file']['name'];
+        $fileSize = $_FILES['the_file']['size'];
+        $fileTmpName  = $_FILES['the_file']['tmp_name'];
+        $fileType = $_FILES['the_file']['type'];
+        echo'<pre>';
+            print_r([$fileExtensionsAllowed,$fileName,$fileSize,$fileTmpName,$fileType]);
+        echo'<pre>';
+        // $fileExtension = strtolower(end(explode('.',$fileName)));
+
+        // if (! in_array($fileExtension,$fileExtensionsAllowed)) {
+        //     $errors[] = "This file extension is not allowed. Please upload a JPEG or PNG file";
+        // }
+    }
+?>
+
+
 <div class="popup_permi">
     <div class="boxPermi">
-        
+        <div class="close"><i class="fa-solid fa-circle-xmark" style="color:red"></i></div>
+        <div class="permiheader">
+            <div>Ajouter un Document</div>
+        </div>
+        <div class="listPermi">
+            <label for="" class="text-secondary fs-6">Type : </label>
+            <select class="form-select mt-2 " aria-label="Default select example">
+                <option selected>Selectionner une type de document</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+            </select>
+            <label for="" class="text-secondary mt-4 fs-6">Déscription :</label>
+            <div class="form-floating mt-2">
+                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                <label for="floatingTextarea2" style="font-size:15px">Remarque</label>
+            </div>
+            <label for="" class="text-secondary mt-4 fs-6">Fichier :</label>
+            <div class="loadFile">
+                <input type="file" name="" id="">
+            </div>
+            
+        </div>
+        <form action="" method="post">
+            <div class="btnsave mb-5 mt-3">
+                <button type="submit" class="btn btn-primary" name="uploadFile">Enregistrer</button>
+            </div>
+        </form>
     </div>
 </div>
+
 
 
     

@@ -46,7 +46,7 @@
     width: 65%;
     height: auto;
 }
-.info_parent div{
+.info_parent + div{
     display: flex;
     flex-direction:column;
     align-items:flex-start;

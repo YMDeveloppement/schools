@@ -466,11 +466,49 @@ img path {
     display: flex;
     align-items: start;
     justify-content: center;
+    /* display: none; */
 }
 .boxPermi{
     margin-top: 30px;
     width: 400px;
-    height: 80%;
+    /* height: 80%;  */
     background-color: #ffffff;
     border-radius: 10px;
+    position: relative;
+    /* overflow-y:auto ; */
+    /* overflow-x:visible ; */
+    padding: 10px;
+    box-shadow:3px 3px 8px 7px rgb(201, 199, 199);
+
+}
+.permiheader{
+    line-height: 35px;
+    padding: 10px 0;
+    font-weight:bold ;
+}
+.close{
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    cursor: pointer;
+    font-size: x-large;
+}
+.listPermi{
+    margin:20px 0;
+    overflow: auto;
+}
+.btnsave{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.loadFile{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.loadFile input{
+    font-size: small;
 }
