@@ -5,7 +5,6 @@ include_once  dirname(dirname( dirname( __FILE__ ))) ."\layouts\headerFile.php" 
     
 <div class="container_ficheEleve">
     <div class="card_ficheEleve">
-
         <div class="dataEleve">
             <div class="profil">
                 <div class="profil_img">
@@ -36,41 +35,57 @@ include_once  dirname(dirname( dirname( __FILE__ ))) ."\layouts\headerFile.php" 
             <div class="location"><i class="fa-solid fa-location-dot" style="color: #bababa;"></i><span>Yassine.mesbahi@gmail.com</span></div>
             <div class="codeFamille"><i class="fa-solid fa-id-card"  style="color: #bababa;"></i><span>#25879032#</span></div>
         </div>
-        <!-- <div class ="ttl_card" >Sœurs & Frères :</div> -->
-        <div class="list_tuteurs">
-            <div class="tuteur">
-                <div class="recu-prof">
-                    <img src="/schools/img/profil.png" alt="profil">
-                </div>
-                <div>
-                    <div style="color:blue;font-weight:900;font-size:.8vw">Yassine MESBAHI - frere </div>
-                    <div>CP CP1</div>
+        <div class="listFrere">
+            <div class ="ttl_card" >
+                <div>Sœurs & Frères : </div>
+                <div >
+                    <button class="prevFr"><</button>
+                    <button class="nextFr">></button>
                 </div>
             </div>
-            <div class="tuteur">
-                <div class="recu-prof">
-                    <img src="/schools/img/profil.png" alt="profil">
+            <div class="list_tuteurs">
+                <div class="frere">
+                    <div class="photo">
+                        <img src="/schools/img/profil.png" alt="profil">
+                    </div>
+                    <div>
+                        <div style="color:blue;font-weight:900;font-size:.8vw">Yassine MESBAHI - frere </div>
+                        <div>CP CP1</div>
+                    </div>
                 </div>
-                <div>
-                    <div>status</div>
-                    <div>Nom Complet</div>
-                   
+                <div class="frere">
+                    <div class="photo">
+                        <img src="/schools/img/profil.png" alt="profil">
+                    </div>
+                    <div>
+                        <div style="color:blue;font-weight:900;font-size:.8vw">Yassine MESBAHI - frere </div>
+                        <div>CP CP1</div>
+                    </div>
                 </div>
-            </div>
-            <div class="tuteur" >
-                <div class="recu-prof">
-                    <img src="/schools/img/profil.png" alt="profil">
+                <div class="frere">
+                    <div class="photo">
+                        <img src="/schools/img/profil.png" alt="profil">
+                    </div>
+                    <div>
+                        <div style="color:blue;font-weight:900;font-size:.8vw">Yassine MESBAHI - frere </div>
+                        <div>CP CP1</div>
+                    </div>
                 </div>
-                <div>
-                    <div>status</div>
-                    <div>Nom Complet</div>
+                <div class="frere">
+                    <div class="photo">
+                        <img src="/schools/img/profil.png" alt="profil">
+                    </div>
+                    <div>
+                        <div style="color:blue;font-weight:900;font-size:.8vw">Yassine MESBAHI - frere </div>
+                        <div>CP CP1</div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
     <div class="tuteurs">
         <div class="addTuteur">
-            <div class="title  flx ">
+            <div class="title flx ">
                 <div>Personnes autorisées à récupérer :</div>
                 <div class="iconAddSmall">
                     <button><i class="fa-solid fa-plus" style="color: #3838ff;"></i></button>
@@ -129,19 +144,51 @@ include_once  dirname(dirname( dirname( __FILE__ ))) ."\layouts\headerFile.php" 
         <div class="listTuteur">
             <div class="title">Parents & tuteurs :</div>
             <!-- <?php foreach ($data['tuteurs'] as $key => $value) {} ?> -->
-            <div class="tuteur">
-                <div class="img_tuteur">
-                    <img src="" alt="">
-                </div>  
-                <div class="titeurInfo">
-                    <div class="nameTuteur"></div>
-                    <div class="telTuteur">
-                        Tel :
+            <div class="tuteurFamile">
+                <div class="tuteur">
+                    <div class="img_tuteur">
+                        <img src="/schools/img/profil.png" alt="Profil">
+                    </div>  
+                    <div class="titeurInfo">
+                        <div class="nameTuteur">Yassine Mesbahi - Marie</div>
+                        <div class="telTuteur">
+                        <i class="fa-solid fa-square-phone" style="color: #25d366;margin-right:5px"></i><span>0614253678</span>
+                        </div>
+                        <div class="checkApp">
+                            <div class="status">Status : <span>Maman</span></div>
+                        </div>
                     </div>
-                    <div class="checkApp">
-                        <div class="statusApp"></div>
-                        <div class="country"></div>
+
+                </div>
+                <div class="tuteur">
+                    <div class="img_tuteur">
+                        <img src="/schools/img/profil.png" alt="Profil">
+                    </div>  
+                    <div class="titeurInfo">
+                        <div class="nameTuteur">Yassine Mesbahi - Marie</div>
+                        <div class="telTuteur">
+                        <i class="fa-solid fa-square-phone" style="color: #25d366;margin-right:5px"></i><span>0614253678</span>
+                        </div>
+                        <div class="checkApp">
+                            <div class="status">Status : <span>Maman</span></div>
+                        </div>
                     </div>
+
+                </div>
+                <div class="tuteur">
+                    <div class="img_tuteur">
+                        <img src="/schools/img/profil.png" alt="Profil">
+                    </div>  
+                    <div class="titeurInfo">
+                        <div class="nameTuteur">Yassine Mesbahi - Marie</div>
+                        <div class="telTuteur">
+                        <i class="fa-solid fa-square-phone" style="color: #25d366;margin-right:5px"></i><span>0614253678</span>
+                        </div>
+                        <div class="checkApp">
+                            <div class="status">Status : <span>Papa</span></div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>

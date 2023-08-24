@@ -5,11 +5,26 @@ $(document).ready(() => {
         slidesToScroll: 1
     });
     $('.box_autorecup').slick();
+
     $('.list_tuteurs').slick({
         slidesToShow: 2,
+        nextArrow: '.nextFr',
+        prevArrow: '.prevFr',
     });
-    // $('.box_autorecup').slick({
-    //     nextArrow: '.nextBtn',
+    
+    $('.tuteurFamile').slick({
+        slidesToShow: 2,
+        nextArrow: '.nextFr',
+        prevArrow: '.prevFr',
+    });
+    // $('.listTuteur').slick({
+    //     slidesToShow: 2,
+    //     nextArrow: '.nextFr',
+    //     prevArrow: '.prevFr',
+    // });
+    // $('.listFrere').slick({
+    //     nextArrow: '.nextFr',
+    //     prevArrow: '.prevFr',
     //     dots: false,
     // });
     

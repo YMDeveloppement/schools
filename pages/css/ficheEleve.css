@@ -84,31 +84,40 @@
     /* margin-bottom: 10px; */
 }
 .list_tuteurs{
-    width: 40%;
+    /* width: 40%; */
+    /* width: 100%; */
     height: 80%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.tuteur{
-    height: 100% !important;
-    margin: 0 5px !important;
-    /* width: 40% !important; */
+.frere{
+    height: 100px ;
+    margin: 0 5px ;
     display: flex !important;
     align-items: center !important;
-    /* justify-content: space-evenly !important; */
+    justify-content: space-evenly !important;
     padding:0 10px;
     margin :10px 0 ;
     border:1px solid #c2c2c2 ;
     border-radius: 10px;
-    
 }
-.tuteur .recu-prof{
+.frere .photo img{
+    width:50px;
+    height:50px;
+}
+.frere .photo{
+    width:50px;
+    height:50px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+/* .frere .recu-prof{
     height: 100%;
-}
-.tuteur .tel_recup{
+} */
+/* .frere .tel_recup{
     height: 100%;
-}
+} */
 .tuteurs{
     display: flex;
     flex-direction: row;
@@ -153,6 +162,8 @@
     background-color: transparent;
 }
 .listTuteur{
+    /* display: flex;
+    flex-direction: column; */
     width: 70%;
     height: 100%;
 }
@@ -164,4 +175,56 @@
     font-size: 1.1rem;
     font-weight: bolder;
 }
+.list_tuteurs button{
+    display: none !important;
+}
+.listFrere{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    
+}
+.ttl_card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nextFr , .prevFr{
+    border-radius: 50%;
+    outline: none;
+}
+.tuteurFamile{
+    height: 90px ;
+    /* border:1px solid #c2c2c2 ; */
+    border-radius: 10px;
+}
+.tuteur{
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-evenly !important;
+    padding:0 10px;
+    margin :10px 0 ;
+    border-radius: 10px;
+    border:1px solid #c2c2c2 ;
 
+}
+ .nameTuteur{
+    font-size: 15px;
+    font-weight:600 ;
+
+}
+.telTuteur span{
+    font-size: 12px;
+    font-weight:600 ;
+}
+
+.checkApp{
+    display: flex;
+}
+.status span{
+    font-weight: bold
+}
+.img_tuteur img{
+    height: 60px;
+    width: 60px;
+}

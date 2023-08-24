@@ -28,6 +28,8 @@ echo <<<"Head"
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="/schools/pages/css/sliderEleve.css">
 
+    <link  rel="stylesheet"  href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.11.0/css/flag-icons.min.css"
+/>
 </head>
 <body id="body-pd">
     <header class="header" id="header">
