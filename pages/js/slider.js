@@ -4,6 +4,15 @@ $(document).ready(() => {
         slidesToShow: 5,
         slidesToScroll: 1
     });
+    $('.box_autorecup').slick();
+    $('.list_tuteurs').slick({
+        slidesToShow: 2,
+    });
+    // $('.box_autorecup').slick({
+    //     nextArrow: '.nextBtn',
+    //     dots: false,
+    // });
+    
 });
 
 $(".slideTesting div h3").addClass("newh3");

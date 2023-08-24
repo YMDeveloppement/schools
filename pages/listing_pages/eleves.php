@@ -6,12 +6,12 @@ include_once  dirname(dirname( dirname( __FILE__ ))) ."\layouts\headerFile.php" 
 <div class="container_ficheEleve">
     <div class="card_ficheEleve">
 
-        <div>
+        <div class="dataEleve">
             <div class="profil">
                 <div class="profil_img">
                     <div class="imageEleve"><img src="/schools/img/eleves/nour_mesbahi.png" alt="profil"></div>
                     <div class="profil_inf">
-                        <div class="name"></div>
+                        <div class="name ttl_card">Yassine MESBAHI</div>
                         <div class="status">depart</div>
                         <div class="class_promo">Class : --</div>
                         <div class="massar">Massar : --</div>
@@ -25,35 +25,104 @@ include_once  dirname(dirname( dirname( __FILE__ ))) ."\layouts\headerFile.php" 
             </div>
         </div>
         <div class="info_parent">
+            <div class ="ttl_card" >Informations :</div>
             <div class="telParent">
                 <div><i class="fa-solid fa-phone" style="color: #bababa;"></i> 0669857412</div>
-                <div><i class="fa-solid fa-phone" style="color: #bababa;"></i> 0663016490</div>
-                <div><i class="fa-solid fa-phone" style="color: #bababa;"></i> 0694383802</div>
+                <!-- <div><i class="fa-solid fa-phone" style="color: #bababa;"></i> 0663016490</div>
+                <div><i class="fa-solid fa-phone" style="color: #bababa;"></i> 0694383802</div> -->
             </div>      
-            <div class="emailParent"><span><i class="fa-solid fa-envelope" style="color: #bababa;"></i></span> Yassine.mesbahi@gmail.com</div>
-            <div class="annive"><i class="fa-solid fa-cake-candles" style="color: #bababa;"></i>2020/8/9</div>
-            <div class="location"><i class="fa-solid fa-location-dot" style="color: #bababa;"></i> Yassine.mesbahi@gmail.com</div>
-            <div class="codeFamille">#25879032#</div>
+            <div class="emailParent"><i class="fa-solid fa-envelope" style="color: #bababa;"></i><span>Yassine.mesbahi@gmail.com</span></div>
+            <div class="annive"><i class="fa-solid fa-cake-candles" style="color: #bababa;"></i><span>2020/8/9</span></div>
+            <div class="location"><i class="fa-solid fa-location-dot" style="color: #bababa;"></i><span>Yassine.mesbahi@gmail.com</span></div>
+            <div class="codeFamille"><i class="fa-solid fa-id-card"  style="color: #bababa;"></i><span>#25879032#</span></div>
         </div>
+        <!-- <div class ="ttl_card" >Sœurs & Frères :</div> -->
         <div class="list_tuteurs">
             <div class="tuteur">
-                <i></i>
+                <div class="recu-prof">
+                    <img src="/schools/img/profil.png" alt="profil">
+                </div>
+                <div>
+                    <div style="color:blue;font-weight:900;font-size:.8vw">Yassine MESBAHI - frere </div>
+                    <div>CP CP1</div>
+                </div>
+            </div>
+            <div class="tuteur">
+                <div class="recu-prof">
+                    <img src="/schools/img/profil.png" alt="profil">
+                </div>
                 <div>
                     <div>status</div>
                     <div>Nom Complet</div>
-                    <div>Tél</div>
-                    <div>Email</div>
+                   
+                </div>
+            </div>
+            <div class="tuteur" >
+                <div class="recu-prof">
+                    <img src="/schools/img/profil.png" alt="profil">
+                </div>
+                <div>
+                    <div>status</div>
+                    <div>Nom Complet</div>
                 </div>
             </div>
         </div>
-        <div></div>
     </div>
     <div class="tuteurs">
         <div class="addTuteur">
-            <div class="title">Personnes autorisées à récupérer :</div>
-            <div class="box_addnew">
-                <div class="iconAdd">
+            <div class="title  flx ">
+                <div>Personnes autorisées à récupérer :</div>
+                <div class="iconAddSmall">
                     <button><i class="fa-solid fa-plus" style="color: #3838ff;"></i></button>
+                </div>
+            </div>
+            <div class="box_recup">
+                <!-- <div class="box_addnew">
+                    <div class="iconAdd">
+                        <button><i class="fa-solid fa-plus" style="color: #3838ff;"></i></button>
+                    </div>
+                </div> -->
+                <div class="box_autorecup">
+                    <div class="item_autorecup" style="width: 80% !important">
+
+                        <div class="recu-prof">
+                            <img src="/schools/img/profil.png" alt="profil">
+                        </div>
+                        <div class="tel_recup">
+                            <i class="fa-solid fa-square-phone" style="color: #25d366;margin-right:5px"></i><span>0614253678</span>
+                        </div>
+                        
+                    </div>
+                    <div class="item_autorecup">
+
+                        <div class="recu-prof">
+                            <img src="/schools/img/profil.png" alt="profil">
+                        </div>
+                        <div class="tel_recup">
+                            <i class="fa-solid fa-square-phone" style="color: #25d366;margin-right:5px"></i><span>0614253678</span>
+                        </div>
+                        
+                    </div>
+                    <div class="item_autorecup">
+
+                        <div class="recu-prof">
+                            <img src="/schools/img/profil.png" alt="profil">
+                        </div>
+                        <div class="tel_recup">
+                            <i class="fa-solid fa-square-phone" style="color: #25d366;margin-right:5px"></i><span>0614253678</span>
+                        </div>
+                        
+                    </div>
+                    <div class="item_autorecup">
+
+                        <div class="recu-prof">
+                            <img src="/schools/img/profil.png" alt="profil">
+                        </div>
+                        <div class="tel_recup">
+                            <i class="fa-solid fa-square-phone" style="color: #25d366;margin-right:5px"></i><span>0614253678</span>
+                        </div>
+                        
+                    </div>
                 </div>
             </div>
         </div>
@@ -99,7 +168,7 @@ include_once  dirname(dirname( dirname( __FILE__ ))) ."\layouts\headerFile.php" 
                             Dossiers de l’élève :
                         </div>
                         <div class="subtitle">
-                        (Documents administratifs, copies ..)
+                            (Documents administratifs, copies ..)
                         </div>
                     </div>
                     <div>

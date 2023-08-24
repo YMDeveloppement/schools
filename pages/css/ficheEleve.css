@@ -20,7 +20,7 @@
     border-radius: 20px;
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
     font-size:10pt;
 
@@ -46,13 +46,29 @@
     width: 65%;
     height: auto;
 }
-.info_parent + div{
-    display: flex;
-    flex-direction:column;
-    align-items:flex-start;
-    justify-content: space-around;
+.info_parent{
+    width: 20% ;
     
 }
+.info_parent > div  i {
+    margin-right:10px;
+    max-width: min-content;
+}
+.info_parent > div {
+    /* display: flex;
+    flex-direction:row;
+    align-items:flex-start;
+    justify-content: space-around; */
+    margin-bottom:5px;
+}       
+/* .ttl_card span,
+.telParent span,
+.emailParent span,
+.annive span,
+.location span,
+.codeFamille span{
+    background-color: aquamarine;
+} */
 .name,
 .class_promo,
 .massar,
@@ -65,15 +81,42 @@
 .telParent div
 ,.emailParent
 ,.codeFamille{
-    margin-bottom: 10px;
-
+    /* margin-bottom: 10px; */
+}
+.list_tuteurs{
+    width: 40%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.tuteur{
+    height: 100% !important;
+    margin: 0 5px !important;
+    /* width: 40% !important; */
+    display: flex !important;
+    align-items: center !important;
+    /* justify-content: space-evenly !important; */
+    padding:0 10px;
+    margin :10px 0 ;
+    border:1px solid #c2c2c2 ;
+    border-radius: 10px;
+    
+}
+.tuteur .recu-prof{
+    height: 100%;
+}
+.tuteur .tel_recup{
+    height: 100%;
 }
 .tuteurs{
     display: flex;
     flex-direction: row;
     box-sizing:border-box;
     padding: 0 20px;
-    height: 30%;
+    /* height: 30%; */
+    /* width: ; */
+    flex-wrap: nowrap;
     
 }
 .tuteurs .title{
@@ -117,3 +160,8 @@
     border:none;
     outline: none;
 }
+.ttl_card{
+    font-size: 1.1rem;
+    font-weight: bolder;
+}
+

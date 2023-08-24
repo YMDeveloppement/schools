@@ -466,7 +466,7 @@ img path {
     display: flex;
     align-items: start;
     justify-content: center;
-    /* display: none; */
+    display: none;
 }
 .boxPermi{
     margin-top: 30px;
@@ -511,4 +511,77 @@ img path {
 }
 .loadFile input{
     font-size: small;
+}
+.flx{
+    display: flex;
+    /* align-items: center;
+    justify-content: center; */
+}
+/* ############################################################### */
+.cardtuto{
+
+}
+
+.iconAddSmall{
+    background-color: #eef0ff;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 10px;
+    /* display: none; */
+}
+.iconAddSmall button{
+    border: none;
+    outline: none;
+    background-color: transparent;
+    margin: auto;
+}
+.iconAddSmall button:focus{
+    border:none;
+    outline: none;
+}
+.box_recup{
+    height: 90%;
+    width: 100%;
+}
+.box_autorecup{
+    height: 90% !important;
+    width: 100%;
+}
+.item_autorecup{
+    height: 100%;
+    width: 80% !important;
+    display: flex !important;
+    align-items: center !important;
+    /* justify-content: space-evenly !important; */
+    padding:0 10px;
+    margin :10px 0 ;
+    border:1px solid #c2c2c2 ;
+    border-radius: 10px;
+    
+}
+.recu-prof{
+    width: 30%;
+    border-radius: 50%;
+}
+.recu-prof img{
+    width: 90%;
+    height: auto;
+    border-radius: 50%;
+}
+.tel_recup{
+    width: 60%;
+    text-align: center;
+}
+.box_autorecup .slick-next{
+    right: 40px !important;
+}
+.box_autorecup .slick-prev{
+    display:none !important;
+}
+.slick-slide{
+    margin: 0 5px !important;
 }
