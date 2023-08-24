@@ -14,8 +14,8 @@ $(document).ready(() => {
     
     $('.tuteurFamile').slick({
         slidesToShow: 2,
-        nextArrow: '.nextFr',
-        prevArrow: '.prevFr',
+        nextArrow: '.nextTut',
+        prevArrow: '.prevTut',
     });
     // $('.listTuteur').slick({
     //     slidesToShow: 2,

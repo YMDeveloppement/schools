@@ -142,7 +142,13 @@ include_once  dirname(dirname( dirname( __FILE__ ))) ."\layouts\headerFile.php" 
             </div>
         </div>
         <div class="listTuteur">
-            <div class="title">Parents & tuteurs :</div>
+            <div class="ttl_card">
+                <div> Parents & tuteurs : </div>
+                <div >
+                    <button class="prevTut"><</button>
+                    <button class="nextTut">></button>
+                </div> 
+            </div>
             <!-- <?php foreach ($data['tuteurs'] as $key => $value) {} ?> -->
             <div class="tuteurFamile">
                 <div class="tuteur">
@@ -397,26 +403,6 @@ include_once  dirname(dirname( dirname( __FILE__ ))) ."\layouts\headerFile.php" 
     </div>
 </div> -->
 
-<?php
-    
-    if($_FILES['my_file']['name']!=""){
-        // echo 'yes';
-        $error=[];  
-        $fileExtensionsAllowed = ['png']; 
-        $fileName = $_FILES['the_file']['name'];
-        $fileSize = $_FILES['the_file']['size'];
-        $fileTmpName  = $_FILES['the_file']['tmp_name'];
-        $fileType = $_FILES['the_file']['type'];
-        echo'<pre>';
-            print_r([$fileExtensionsAllowed,$fileName,$fileSize,$fileTmpName,$fileType]);
-        echo'<pre>';
-        // $fileExtension = strtolower(end(explode('.',$fileName)));
-
-        // if (! in_array($fileExtension,$fileExtensionsAllowed)) {
-        //     $errors[] = "This file extension is not allowed. Please upload a JPEG or PNG file";
-        // }
-    }
-?>
 
 
 <div class="popup_permi">
@@ -425,6 +411,7 @@ include_once  dirname(dirname( dirname( __FILE__ ))) ."\layouts\headerFile.php" 
         <div class="permiheader">
             <div>Ajouter un Document</div>
         </div>
+        <form action="" method="post" id="formId" enctype="multipart/form-data">
         <div class="listPermi">
             <label for="" class="text-secondary fs-6">Type : </label>
             <select class="form-select mt-2 " aria-label="Default select example">
@@ -440,17 +427,51 @@ include_once  dirname(dirname( dirname( __FILE__ ))) ."\layouts\headerFile.php" 
             </div>
             <label for="" class="text-secondary mt-4 fs-6">Fichier :</label>
             <div class="loadFile">
-                <input type="file" name="" id="">
+                <input type="file" name="eleveDoc">
             </div>
             
         </div>
-        <form action="" method="post">
             <div class="btnsave mb-5 mt-3">
                 <button type="submit" class="btn btn-primary" name="uploadFile">Enregistrer</button>
             </div>
         </form>
     </div>
 </div>
+<?php
+    echo 'yassine';
+    if(isset($_POST['uploadFile'])){
+        if($_FILES['eleveDoc']){            
+            $error=[];  
+            $fileExtensionsAllowed = ['png']; 
+            $fileName = $_FILES['eleveDoc']['name'];
+            $fileSize = $_FILES['eleveDoc']['size'];
+            $fileTmpName  = $_FILES['eleveDoc']['tmp_name'];
+            $fileType = $_FILES['the_file']['type'];
+            echo'<pre>';
+                print_r([
+                    $fileName,
+                    $fileSize,
+                    $fileTmpName,
+                    $fileType
+                ]);
+            echo'<pre>';
+            // $fileExtension = strtolower(end(explode('.',$fileName)));
+    
+            // if (! in_array($fileExtension,$fileExtensionsAllowed)) {
+            //     $errors[] = "This file extension is not allowed. Please upload a JPEG or PNG file";
+            // }
+        }
+    }
+?>
+
+<script>
+    var form=document.getElementById("formId");
+    function submitForm(event){
+
+    //Preventing page refresh
+    event.preventDefault();
+    }
+</script>
 
 
 

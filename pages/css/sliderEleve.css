@@ -466,7 +466,7 @@ img path {
     display: flex;
     align-items: start;
     justify-content: center;
-    display: none;
+    /* display  : none; */
 }
 .boxPermi{
     margin-top: 30px;
