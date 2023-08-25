@@ -48,3 +48,15 @@ $(".close").click(function(){
     console.log($("popup_permi"))
     $(".popup_permi").css("display","none")
 })
+$(".add-add").click(function(){
+    $(".popup_permi").css("display", "flex")
+});
+$(".popup_permi").click(function(event){
+    let x = document.querySelector(".popup_permi");
+    console.log(event.target == x)
+    if (event.target == x) {
+            // console.log(x)
+            $(this).css("display", "none")
+        }
+});
+
