@@ -32,7 +32,6 @@ class Inscription
             $Newhere="where ". implode(" and ",$addWhere);
         }
         $query = "select * from inscriptions ".$Newhere;
-       
         if(Connect::$conn){
             if($Newhere){
                 

@@ -45,18 +45,38 @@ $('.box').click(function(){
 })
 
 $(".close").click(function(){
-    console.log($("popup_permi"))
-    $(".popup_permi").css("display","none")
+    $(".boxPermi").css("top", "-200%")
+    $(".popup_permi").css("visibility","hidden")
+})
+$(".closeListDoc").click(function(){
+    $(".listDoc").css("top", "-200%")
+    $(".popup_permi").css("visibility","hidden")
 })
 $(".add-add").click(function(){
-    $(".popup_permi").css("display", "flex")
+    $(".ajtDoc").css("visibility", "visible")
+    $(".boxPermi").css("top", 0)
+    
 });
+$(".folder-icon").click(function(){
+    $(".showDoc").css("visibility", "visible")
+    $(".listDoc").css("top", 0)
+    
+});
+// $(".folder-icon").click(function(){
+//     $(".ajtDoc").css("visibility", "visible")
+//     $(".boxPermi").css("top", 0)
+// });
 $(".popup_permi").click(function(event){
-    let x = document.querySelector(".popup_permi");
-    console.log(event.target == x)
-    if (event.target == x) {
-            // console.log(x)
-            $(this).css("display", "none")
+    let x = document.querySelectorAll(".popup_permi");
+    x.forEach(element => {
+        if (event.target == element) {
+            console.log(x)
+            $(".boxPermi").css("top", "-200%")
+            $(".listDoc").css("top", "-200%")
+            // $(".popup_permi").css("transition",".8s")
+            $(".popup_permi").css("visibility","hidden")
         }
+    });
+    // console.log(event.target == x)
 });
 

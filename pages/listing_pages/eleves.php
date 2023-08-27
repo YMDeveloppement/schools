@@ -227,10 +227,10 @@ include_once $url ."\layouts\headerFile.php"    ;
                     </div>
                     <div>
                         <div class="button-box">
-                            <div class="add-add">
+                            <div class="add-add icon-icon">
                                 <i class="fa-solid fa-plus"></i>
                             </div>
-                            <div class="folder-icon">
+                            <div class="folder-icon ">
                                 <i class="fa-regular fa-folder-open"></i>
                             </div>
                         </div>
@@ -364,54 +364,78 @@ include_once $url ."\layouts\headerFile.php"    ;
 </div>
 <!-- popup -->
 
-<!-- <div class="popup_permi">
+<div class="popup_permi">
     <div class="boxPermi">
         <div class="close"><i class="fa-solid fa-circle-xmark" style="color:red"></i></div>
         <div class="permiheader">
-            <div>Ajouter une Autorisation</div>
+            <div>Ajouter une personnes autorisées à récupérer</div>
         </div>
         <div class="listPermi">
-            <label for="" class="text-secondary fs-6">Type : </label>
-            <select class="form-select mt-2 " aria-label="Default select example">
-                <option selected>Selectionner une autorisation</option>
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
-            </select>
-            <label for="" class="text-secondary mt-4 fs-6">Déscription :</label>
-            <div class="form-floating mt-2">
-                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
-                <label for="floatingTextarea2" style="font-size:15px">Remarque</label>
-            </div>
-            <label for="" class="text-secondary mt-4 fs-6">Status :</label>
-            <div class="form-check mt-2" style="margin-left:10px">
-                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                <label class="form-check-label" for="flexRadioDefault1">
-                    Activer
-                </label>
-            </div>
-            <div class="form-check" style="margin-left:10px"> 
-                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-                <label class="form-check-label" for="flexRadioDefault2">
-                    Désactiver
-                </label>
-            </div>
-            
+            <form action="">
+                <label for="" class="text-secondary fs-6" style="color: black !important">Type : </label>
+                <select class="form-select mt-2 " aria-label="Default select example" >
+                    <option selected>Selectionner une autorisation</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                </select>
+                <div class="mt-3">
+                    <label for="exampleInputEmail1" class="form-label" style="color: black !important">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <div id="emailHelp" class="form-text">Enter Voter Numero de telephone </div>
+                </div>
+                <label for="" class="text-secondary mt-4 fs-6" style="color: black !important">Status :</label>
+                <div class="form-check mt-2" style="margin-left:10px; ">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1" style="color: black !important">
+                        Activer
+                    </label>
+                </div>
+                <div class="form-check" style="margin-left:10px; "> 
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                    <label class="form-check-label" for="flexRadioDefault2" style="color: black !important">
+                        Désactiver
+                    </label>
+                </div>
+            </form>
         </div>
-        <div class="btnsave mb-5 mt-5">
+        <div class="btnsave mb-2 mt-5">
             <button type="button" class="btn btn-primary">Enregistrer</button>
         </div>
     </div>
-</div> -->
+</div>
 
-<div class="popup_permi">
+<div class="popup_permi showDoc">
     <div class="listDoc">
-        
+        <div class="title_etat">
+            <div class="title">Etat des dossier</div>
+            <div class="icon-icon">
+                <button><i class="fa-solid fa-print" style="color:#6b4ce6"></i></button>
+            </div>
+        </div>
+        <div class="list_etat">
+            <div class="list-item ">
+                <div>Photo d'identité</div>
+                <div class="statusCheck"><i class="fa-solid fa-xmark" style="color:red;font-size:18px"></i></div>
+            </div>
+            <div class="list-item ">
+                <div>Certificat de naissance</div>
+                <div class="statusCheck"><i class="fa-solid fa-check" style="color:#00da50;font-size:18px"></i></div>
+            </div>
+            <div class="list-item ">
+                <div>Attestation de travail du parent</div>
+                <div class="statusCheck"><i class="fa-solid fa-check" style="color:#00da50;font-size:18px"></i></div>
+            </div>
+            
+        </div>
+        <div class="closeListDoc mt-5">
+            <button>Fermer</button>
+        </div>
     </div>
 </div>
 
-
-<!-- <div class="popup_permi">
+<!--
+<div class="popup_permi ajtDoc">
     <div class="boxPermi">
         <div class="close"><i class="fa-solid fa-circle-xmark" style="color:red"></i></div>
         <div class="permiheader">
@@ -442,7 +466,7 @@ include_once $url ."\layouts\headerFile.php"    ;
             </label>
             
         </div>
-            <div class="btnsave mb-5 mt-3">
+            <div class="btnsave mb-2 mt-3">
                 <button type="submit" class="btn btn-primary" name="uploadFile">Enregistrer</button>
             </div>
         </form>

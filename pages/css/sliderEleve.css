@@ -199,12 +199,12 @@ img path {
     background-color: #ff7f004a;
     color: #ff7f00;
 }
-.add-add{
+.icon-icon{
     background-color: #ae00ff4a;
     color: #a206eb;
 }
 .folder-icon,
-.add-add{
+.icon-icon{
     cursor: pointer;
     width: 40px;
     height: 40px;
@@ -466,8 +466,12 @@ img path {
     display: flex;
     align-items: start;
     justify-content: center;
-    /* display: none; */
-    transition: all 1s ease-in;
+    visibility: hidden;
+    transition: all .6s ease-in;
+    /* transition-delay: 1s; */
+    padding: 20px;
+    overflow: auto;
+    
 }
 .boxPermi{
     margin-top: 30px;
@@ -478,7 +482,7 @@ img path {
     padding: 10px;
     box-shadow:3px 3px 8px 7px rgb(201, 199, 199);
     transition: all 1s ease-in;
-
+    /* top: -200%; */
 }
 .permiheader{
     line-height: 35px;
@@ -587,7 +591,7 @@ img path {
 }
 /* ########################################## */
 .custum-file-upload {
-    height: 200px;
+    height: 150px;
     width: 300px;
     display: flex;
     flex-direction: column;
@@ -630,6 +634,19 @@ img path {
     display: none;
 }
   /* ############################### */
-.listDoc{
-        
+.closeListDoc{
+    width: 100%;
+
+}
+.closeListDoc button{
+    outline: none;
+    border: none;
+    background-color: transparent;
+    width: 70%;
+    margin: 0 15%;
+    text-align: center;
+    line-height: 40px;
+    background-color: #ee7505;
+    border-radius: 20px;
+    color: white;
 }

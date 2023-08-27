@@ -228,3 +228,34 @@
     height: 60px;
     width: 60px;
 }
+.listDoc{
+    position: relative;
+    background-color:#fbfcff;
+    width:400px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow:3px 3px 8px 7px rgb(201, 199, 199);
+    transition: all 1s ease-in;
+    top: -200%;
+}
+.title_etat{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.title_etat .icon-icon{
+    background-color: rgba(107, 76, 230,.5);
+}
+.icon-icon button{
+    outline: none;
+    border: none;
+    background-color: transparent !important;
+}
+.list-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 50px;
+    
+}
